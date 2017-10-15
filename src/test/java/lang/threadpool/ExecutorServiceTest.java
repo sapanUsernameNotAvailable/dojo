@@ -22,6 +22,6 @@ public class ExecutorServiceTest {
         });});
 
 
-        Thread.sleep(7500); // 500*15
+        Thread.sleep(7500); // 500*15 = worst case single thread execution time.
     }
 }
