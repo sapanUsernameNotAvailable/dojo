@@ -1,4 +1,4 @@
-package design.structural.bridge;
+package design.miscellaneous.bridge;
 
 /**
  * Because I use an interface and I can be extended, therefore I guess I am a bridge.

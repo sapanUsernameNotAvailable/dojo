@@ -1,4 +1,4 @@
-package design.structural.bridge;
+package design.miscellaneous.bridge;
 
 public interface ExtendedMainService {
     public void doExtendedStuff();

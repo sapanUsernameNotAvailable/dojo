@@ -1,4 +1,4 @@
-package design.structural.bridge;
+package design.miscellaneous.bridge;
 
 public class ExtendedMainServiceImpl extends MainService implements ExtendedMainService {
 

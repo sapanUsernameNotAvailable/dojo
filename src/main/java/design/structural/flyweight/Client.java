@@ -9,6 +9,6 @@ public class Client {
     Flyweight singleObject = new FlyweightImpl();
 
     public void doStuff() {
-        lotOfStates.stream().forEach(state -> singleObject.doStuff(state));
+        lotOfStates.stream().forEach(state -> singleObject.doStuff(state)); // code to interface
     }
 }
