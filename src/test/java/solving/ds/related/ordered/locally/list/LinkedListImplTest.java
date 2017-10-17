@@ -1,10 +1,7 @@
-package solving.list;
+package solving.ds.related.ordered.locally.list;
 
 import org.junit.Assert;
 import org.junit.Test;
-import solving.ds.list.LinkedList;
-import solving.ds.list.LinkedListImpl;
-import solving.ds.list.Node;
 
 public class LinkedListImplTest {
     @Test

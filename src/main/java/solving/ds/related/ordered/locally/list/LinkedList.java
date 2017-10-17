@@ -1,7 +1,9 @@
-package solving.ds.list;
+package solving.ds.related.ordered.locally.list;
 
-import java.util.Optional;
-
+/**
+ * Use {@link java.util.LinkedList} instead.
+ * @param <T>
+ */
 public interface LinkedList<T> {
 
     public int getSize();

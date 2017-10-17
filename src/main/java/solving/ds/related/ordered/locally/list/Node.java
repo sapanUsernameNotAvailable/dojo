@@ -1,4 +1,4 @@
-package solving.ds.list;
+package solving.ds.related.ordered.locally.list;
 
 import lombok.Data;
 
