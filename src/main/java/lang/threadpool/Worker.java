@@ -16,18 +16,30 @@ public class Worker extends Thread {
 
             Runnable task;
 
-            synchronized (tasks) {
-                while (tasks.isEmpty()) {
-                    try {
-                        tasks.wait();
-                    } catch (InterruptedException e) {
-                        throw new RuntimeException(e);
-                    }
-                }
-                task = tasks.poll();
+            synchronized (tasks) { // 1. shared resource lock
+                handleNoJob();
+                task = tasks.poll(); // 2. consumer
             }
 
-            task.run();
+            task.run(); // miscellaneous stuff - not related to sharing, locking etc.
         }
+    }
+
+    private void handleNoJob() {
+        while (tasks.isEmpty()) { // while not if; just in case thread comes out of waiting for no reason.
+            try {
+                tasks.wait(); // wait for signal
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
+    @Deprecated
+    /**
+     * Use true to return control in caller. And try again. Results in busy wait.
+     */
+    private boolean deprecatedHandleNoJob() {
+        return tasks.isEmpty();
     }
 }

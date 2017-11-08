@@ -11,6 +11,8 @@ monitorable - business cost-return purpose metrics.
 # growth
     agility
     scalability
+        thread-based
+        actor/reactive/event-driven
 
 # competitive
     speed
