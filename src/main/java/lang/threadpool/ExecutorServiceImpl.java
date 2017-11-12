@@ -9,7 +9,7 @@ import java.util.stream.IntStream;
 public class ExecutorServiceImpl implements ExecutorService {
 
     private final List<Thread> consumers = new LinkedList<>();
-    private final Queue<Runnable> tasks = new LinkedBlockingQueue<>();
+    private final Queue<Runnable> tasks = new LinkedList<>();
 
     public ExecutorServiceImpl(int threadCount) {
         IntStream.range(0, threadCount).forEach(i -> consumers.add(new Worker(tasks)));
