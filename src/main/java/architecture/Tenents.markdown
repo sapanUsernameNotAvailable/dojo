@@ -1,19 +1,19 @@
-# purpose
-monitorable - business cost-return purpose metrics.
+# can change
+    current state can be maintained
+    simple
+    extensible
 
-# peace
-    clarity
-    maintainability - durability
+# solve a problem
+monitorable - business cost to returns metrics.
 
-# defence
-    security
+# safeguard it
+    durable[self], secure[foes], compliant[govt.]
 
-# growth
-    agility
-    scalability
-        thread-based
-        actor/reactive/event-driven
+# scale
+    thread-based [load balancing]
+    actor/reactive/event-driven [queues]
+    db sharding
 
 # competitive
-    speed
-    resource efficiency
+    speed(latency)
+    resource efficiency(money margin)
