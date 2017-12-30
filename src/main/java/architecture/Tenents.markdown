@@ -1,7 +1,7 @@
 # can change
     current state can be maintained
-    simple
-    extensible
+    simple // DSLs
+    extensible // design patterns
 
 # solve a problem
 monitorable - business cost to returns metrics.
